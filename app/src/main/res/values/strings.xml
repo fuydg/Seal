@@ -439,4 +439,41 @@
     <string name="data_fetching_extra_command_summary">Enable command templates to be used for data fetching as extra commands</string>
     <string name="disable_write_info_json">Disable Write Info Json</string>
     <string name="disable_write_info_json_summary">(Not Recommended) Every time you restart / resume the download, yt-dlp will re-download json data from the servers.</string>
+<<<<<<< HEAD
 </resources>
+=======
+    <string name="ytdlp_watch_later">YT-DLP Youtube Watch Later (needs cookies)</string>
+    <string name="ytdlp_recommnedations">YT-DLP Youtube Recommendations (needs cookies)</string>
+    <string name="ytdlp_liked">YT-DLP Youtube Liked Videos (needs cookies)</string>
+    <string name="ytdlp_watch_history">YT-DLP Youtube Watch History (needs cookies)</string>
+    <string name="no_check_certificates">Suppress HTTPS certificate validation</string>
+    <string name="live_stream">Live Stream</string>
+    <string name="live_from_start">Live From Start</string>
+    <string name="wait_for_video">Wait For Video</string>
+    <string name="retry_every">Retry Every</string>
+    <string name="minutes">Minutes</string>
+    <string name="prefer_container_over_codec_audio">Prefer Container over Codec For Audio Downloads</string>
+    <string name="prefer_container_over_codec_audio_summary">With this enabled, the preferred audio codec preference will be ignored and only container will change</string>
+    <string name="player_client">Player Client</string>
+    <string name="player_client_summary"><![CDATA[YouTube Player Clients & PO Token]]></string>
+    <string name="use_app_language_for_metadata">Use App Language for Metadata</string>
+    <string name="layout">Layout</string>
+    <string name="list">List</string>
+    <string name="grid">Grid</string>
+    <string name="use_only_po_token">Use only PO Token (Ignore Player Client)</string>
+    <string name="cache_directory">Cache Folder</string>
+    <string name="cache_directory_warning">Changing the Cache Folder might cause unexpected issues. If the app cannot write to the configured path, it will resort to the default internal cache directory</string>
+    <string name="app_icon_change">Icon could change and Application will close</string>
+    <string name="use_format_sorting">Use Format Importance Ordering</string>
+    <string name="use_code_highlighter">Use Code Color Highlighter</string>
+    <string name="reset_preferences_in_screen">Reset all preferences in this screen</string>
+    <string name="automatic_backup">Automatic backup</string>
+    <string name="backup_path">Backup Path</string>
+    <string name="automatic_backup_summary">Automatically make a backup of everything when a new version of the application is found</string>
+    <string name="write_subs_when_embed_subs">Write subtitles when embedding</string>
+    <string name="write_subs_when_embed_subs_summary">This will apply Save Subtitles and Save Automatic Subtitles to download the sub files and then delete them after embedding</string>
+    <string name="generate_potokens">Generate PO Tokens</string>
+    <string name="regenerate">Re-generate</string>
+    <string name="generate_potokens_warning">* By enabling this, you need to disable cookies</string>
+</resources>
+>>>>>>> f47e05b9 (1.8.3)

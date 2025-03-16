@@ -5,6 +5,7 @@ All notable changes (starting from v1.7.3) to stable releases will be documented
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+<<<<<<< HEAD
 ## [v2.0.0][2.0.0] - unreleased
 
 ### Notable changes from v1.13
@@ -20,6 +21,35 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Bump up minimum API level to 24 (Android 7.0)
 
 ## [v1.13.0][1.13.0] - 2024-08-18
+=======
+## Automatically generate WEB PO Tokens & Visitor Data inside the app
+
+Since youtube is enforcing a policy that sessions need po tokens, you might need them to appear more legitimate and not get errors like 403, or even unlock formats that need po tokens.
+
+With some references from LibreTube and OuterTune, the app now has a po token generator using it's WebView.
+These records are stored in the apps preferences. In advanced settings now there is a toggle to enable the use of the tokens in yt-dlp.
+
+Some formats need PO Token to show up like HIGH AUDIO, you will need to log in with cookies and then generate the tokens. There is also the option to use visitor data but you need to disable cookies. 
+yt-dlp doesn't recommend using it but the option is there if u need it.
+
+The app will apply these settings as youtube extractor arguments
+youtube:player_client=web;po_token=web.gvs+GVS_TOKEN,web.player+PLAYER_TOKEN;player-skip=webpage,configs;visitor_data=VISITOR_DATA
+If you have po tokens set up with web client with po token, there might be duplication happening, so check that out.
+Also since these tokens work for any web client, there is also an option to select which web clients to include as extractor arguments.
+
+Other stuff
+- Cut Section has been reworked,thanks to madmini. Now you can cut down to milliseconds.
+- Added safeBrowsingEnabled in WebView for generating cookies for devices of API 26 and above. Thought to generate incognito cookies that last longer
+- Added feature to reset all settings belonging to a certain preference page
+- Added option to turn off the code color highlighter
+- Fixed app not applying prefer small sized formats. It should've been last in format sorting not first.
+- Added ability to enable automatic backup when the app checks for new update and finds one
+- Added write-subs and write-auto-subs and --compat-options no-keep-subs when the user embeds subs but doesnt want to save them so he can get more subtitles to embed
+- Turned the changelog dialog to a separate screen for better visibility
+- Added --external-downloader-args aria2c:"--check-certificate=false" to fix aria2 not working
+- Added bitrate info for audio formats card in the download card
+- Some small bug fix here and there
+>>>>>>> f47e05b9 (1.8.3)
 
 ### Fixed
 
