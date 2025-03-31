@@ -1,3 +1,6 @@
+> Warning
+> 本人刚学安卓开发不久 什么东西还不会 争取把这个项目构建了 ε٩(๑> ₃ <)۶з
+
 <div align="center">
 
 <img width="" src="fastlane/metadata/android/en-US/images/icon.png"  width=160 height=160  align="center">
