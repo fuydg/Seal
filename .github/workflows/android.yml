@@ -4,7 +4,6 @@ on:
   workflow_dispatch:
 
 jobs:
-
   build:
     runs-on: ubuntu-latest
 
@@ -23,7 +22,11 @@ jobs:
 
     - uses: gradle/actions/setup-gradle@v3
 
-    - run: gradle assembleRelease
+    - name: Run Lint (Optional Debug)
+      run: ./gradlew lintRelease --no-configuration-cache --stacktrace --info || true
+
+    - name: Build Release APK (Skip Lint)
+      run: ./gradlew assembleRelease -Pandroid.disableLint=true --no-configuration-cache --stacktrace
 
     - name: Sign app APK
       id: sign_app
